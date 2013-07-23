@@ -1,0 +1,20 @@
+#include <iostream>
+#include <vector>
+
+const long long NUM = 600851475143;
+
+int main()
+{
+  // Get factors
+  std::vector<int> factors;
+  for(long long i = 2; i < NUM/2; i++)
+  {
+    if(NUM % i == 0)
+    {
+      factors.push_back(i);
+    }
+  }
+  std::cout << factors.size();
+  return 0;
+}
+
